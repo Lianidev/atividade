@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação Simples</title>
+</head>
+<body>
+    <h2>Multiplicação Simples</h2>
+
+
+    <button onclick="exibirResultados()">Calcular Produto</button>
+
+
+    <div id="resultado"></div>
+
+
+    <script>
+        function exibirResultados() {
+    
+            const numero1 = Number(prompt("Digite o primeiro número:"));
+
+            const numero2 = Number(prompt("Digite o segundo número:"));
+
+           const produto= numero1 *numero2 ;
+
+
+            document.getElementById("resultado").innerHTML =
+                "<p>A multiplicação dos números é: " + produto + "</p>" 
+                
+        }
+    </script>
+</body>
+</html>
+

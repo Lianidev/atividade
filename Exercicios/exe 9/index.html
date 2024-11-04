@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adição com Função</title>
+</head>
+<body>
+    <h2>Adição com Função</h2>
+
+    <button onclick="exibirResultados()">Adição com Função</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function exibirResultados() {
+            const numero = Number(prompt("Digite um número:"));
+            const outroNumero =  Number(prompt("Digite outro número:"));
+        
+
+            const resultadoAdicao = numero + outroNumero;
+
+            document.getElementById("resultado").innerHTML =
+                "<p>A adicao  do número é: " + resultadoAdição + "</p>"; 
+        }
+    </script>
+</body>
+</html>

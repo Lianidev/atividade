@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter de Metros para Centímetros</title>
+</head>
+<body>
+    <h2>Converter de Metros para Centímetros</h2>
+
+    <button onclick="exibirResultados()">Metros para Centímetros
+    </button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function exibirResultados() {
+
+            const numero = Number(prompt("Digite um número em metros:"));
+
+            const Centímetros = numero * 100;
+
+            
+            document.getElementById("resultado").innerHTML =
+                "<p>O valor em centimetros é: " + Centímetros + "</p>";
+        }
+    </script>
+</body>
+</html>

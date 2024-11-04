@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado de um Número</title>
+</head>
+<body>
+    <h2>Quadrado de um Número</h2>
+
+    <button onclick="exibirResultados()">Quadrado de um Número</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function exibirResultados() {
+            const numero = Number(prompt("Digite um número:"));
+        
+
+            const Quadrado = numero * numero;
+
+            document.getElementById("resultado").innerHTML =
+                "<p>O quadrado  do número é: " + Quadrado + "</p>"; 
+        }
+    </script>
+</body>
+</html>

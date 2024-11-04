@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobro de um Número</title>
+</head>
+<body>
+    <h2>Dobro de um Número</h2>
+
+    <button onclick="exibirResultados()">Dobro de um Número</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function exibirResultados() {
+        
+            const numero1 = Number(prompt("Digite número:"));
+            
+
+             const dobro = numero1 * 2;
+
+        
+            document.getElementById("resultado").innerHTML =
+                "<p>O dobro  do número é: " + dobro + "</p>";
+        }
+    </script>
+</body>
+</html>

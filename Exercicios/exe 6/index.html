@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Área do Quadrado</title>
+</head>
+<body>
+    <h2>Calcular Área do Quadrado</h2>
+
+    <button onclick="exibirResultados()">Calcular Área do Quadrado</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function exibirResultados() {
+            const numero = Number(prompt("Digite o valor do lado do quadrado em metros:"));
+            const area = numero * numero;
+
+            document.getElementById("resultado").innerHTML =
+                "<p> A área do quadrado é: " + area + "</p>";
+        }
+    </script>
+</body>
+</html>

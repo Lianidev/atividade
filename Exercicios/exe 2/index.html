@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de dois números</title>
+</head>
+<body>
+   
+
+    <button onclick="exibirResultados()">Soma de dois Números</button>
+
+
+    
+    <div id="resultado"></div>
+
+
+    <script>
+        function exibirResultados() {
+
+            const numero1 = Number(prompt(" Digite o primeiro número:"));
+           const numero2 = Number(prompt("Digite o segundo número:"));
+
+
+         const soma = numero1 + numero2 ;
+
+
+        
+         document.getElementById("resultado").innerHTML =
+                "<p>A soma dos números é: " + soma + "</p>" 
+            
+        }
+    </script>
+</body>
+</html>
+
+
